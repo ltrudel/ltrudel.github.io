@@ -1,0 +1,45 @@
+h1 {
+    font-family: 'Libre Baskerville', sans-serif;   
+    font-size: 72pt;
+    color: goldenrod;
+    text-align: center;
+}
+h2{ 
+    font-family: 'Libre Baskerville', sans-serif;   
+    text-align: center;
+
+}
+p{  
+    text-align: center;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 24px;
+    color: black;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+html{
+    background-color: beige;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+body{
+    vertical-align: center;
+    align-content: center;
+    align-items: center;
+    
+}
+hr{ 
+    color: dimgray;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+img.a {
+    vertical-align: baseline;
+    
+}
+div.test{   
+    vertical-align: super;
+}
