@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<style> @import url(../style.css); </style>
 <html lang="fr" dir="ltr">
   <head>
+      <style> @import url(../reset.css);</style>
+      <style> @import url(../style.css); </style>
+      
       <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
@@ -11,8 +13,26 @@
     <title>Page 2</title>
 </head>
 <body>
+  <div id="header">
+    <nav>
+      <ul>
+          <li><a href="#">index</a></li>
+          <li><a href="#">page 1</a></li>
+          <li><a href="#">page 3</a></li>
+          <li><a href="#">page 4</a></li>
+      </ul>
+    </nav>
+</div>
+
+<div class="section">
+
     <p><a href="../index.html">Pagge</a></p>
     <p><a href="../page_3/page_3.html">Pagge3</a></p>
+
+  <p>aaaaa <span class="red">  asfdas</span> eeeee</p>
+
+</div>
+<div class="section">
 
   <table border="1" cellpadding="10px" cellspacing="0px">
     <tr> 
@@ -26,21 +46,37 @@
       </tr>
   </table>
 
+  <table cellspacing="0px">
+    <tr height="100px">
+      <td class="yellow" width="100px" rowspan="3"><ul>
+        <li>lundi</li>  
+        <li>mardi</li>  
+        <li>mercredi</li>  
+        <li>jeudi</li>  
+        <li>vendredi</li>
+    </ul></td>
+      <td class= "red" width="200px" colspan="3"><ol>
+        <li>lundi</li>  
+        <li>mardi</li>  
+        <li>mercredi</li>  
+        <li>jeudi</li>  
+        <li>vendredi</li>
+    </ol></td>
+    </tr>
+    <tr height="100px">
+      <td class = "middle" width="200px" rowspan="2" colspan="2">c</td>
+      <td class="yellow" width="100px" rowspan="3">d</td>
+    </tr>
+    <tr height="100px">
+    </tr>
+    <tr height="100px">
+      <td class= "red" width="100px" colspan="3">f</td>
+    </tr>
+  </table>
   
-    <ul>
-        <li>lundi</li>  
-        <li>mardi</li>  
-        <li>mercredi</li>  
-        <li>jeudi</li>  
-        <li>vendredi</li>
-    </ul>
-    <ol>
-        <li>lundi</li>  
-        <li>mardi</li>  
-        <li>mercredi</li>  
-        <li>jeudi</li>  
-        <li>vendredi</li>
-    </ol>
+</div>
+<div id="footer"></div>
+    
 
 </body>
 </html>
