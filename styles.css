@@ -1,30 +1,121 @@
 body{
-    background: black url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='45'%3E%3Cpath d='M10 10h60' stroke='%2300F' stroke-width='5'/%3E%3Cpath d='M10 20h60' stroke='%230F0' stroke-width='5'/%3E%3Cpath d='M10 30h60' stroke='red' stroke-width='5'/%3E%3C/svg%3E")       repeat;
+    background:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px"><g><rect x="7.3" y="7.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 25 -10.3553)" class="st0" width="35.4" height="35.4"/></g></svg>')       repeat;
+
 }
 header{
-    background-color: white;
-    height: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: black;
+    color: white;
+    height: auto;
     width: 100%;
-    margin:auto;
+    font-size: 24px;
+}
+footer{
+    color: silver;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: bottom;
 }
 nav{
-    background-color: red;
-    height: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-color: maroon;
+    width: auto;
+}
+#homebar{
+    margin-top: 20%;
+}
+#bar{
+    background-color: black;
+    box-shadow: black;
     width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 36px;
 }
-#backing{
-    background-color: white;
-    height: 50px;
-    width: 50px;
-    margin: 5% 5%;
-    transform: rotate(45deg);
-}
-#container{
-    background-color: white;
-    padding: 20px;
-    height: 500px;
-    width: 70%;
+.container{
+    background-color: maroon;
+    padding: 0px;
+    height: auto;
+    width: 75%;
     margin: 50px auto auto auto;
-    border-radius: 5%;
     border-style: solid;
+}
+h1{
+    padding: 10px;
+    font-size: 72pt;
+    text-align: center;
+}
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 5px;
+    font-size: 36pt;
+    text-align: center;
+}
+h3{
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 5px;
+    font-size: 64pt !important;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 15px 15px 15px;
+    color: white;
+    letter-spacing: .5px;
+    line-height: auto;
+}
+a{
+    color: white;
+    padding: 6px;
+    background-color: black;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+a:hover {
+  color: red;
+}
+a:active {
+   color: black;
+   background-color: maroon;
+}
+#leftmenu a:link {
+    color: white;
+}
+#leftmenu a:visited {
+    color: silver;
+}
+#leftmenu a:hover {
+  color: gray;
+}
+#leftmenu a:active {
+  color: black;
+}
+
+#leftmenu{
+    position: fixed;
+    width: 11.5%;
+    background-color: black;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    overflow: scroll;
+}
+#leftmenu a{
+    color: white;
+    background-color: unset;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+    line-height: 30px;
+}
+.fix-nav{
+    position: fixed;
+    top: 10px;
 }
