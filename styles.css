@@ -1,6 +1,6 @@
 body{
     background:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px"><g><rect x="7.3" y="7.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 25 -10.3553)" class="st0" width="35.4" height="35.4"/></g></svg>')       repeat;
-
+    background-color: silver;
 }
 header{
     font-family: 'Bebas Neue', sans-serif;
@@ -11,7 +11,7 @@ header{
     font-size: 24px;
 }
 footer{
-    color: silver;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
@@ -19,31 +19,33 @@ footer{
 }
 nav{
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
     background-color: maroon;
     width: auto;
+    box-shadow: 0px -15px 5px maroon;
 }
 #homebar{
     margin-top: 20%;
 }
 #bar{
     background-color: black;
-    box-shadow: black;
     width: 100%;
     height: auto;
     color: white;
     text-align: center;
     font-size: 36px;
+    box-shadow: 0px 15px 5px black;
 }
 .container{
-    background-color: maroon;
+    background-color: white;
     padding: 0px;
     height: auto;
     width: 75%;
-    margin: 50px auto auto auto;
-    border-style: solid;
+    margin: 20px auto auto auto;
+    border-style: solid;    
+    
 }
 h1{
     padding: 10px;
@@ -64,15 +66,15 @@ h3{
 p{
     font-family: 'Roboto', sans-serif;
     padding: 0px 15px 15px 15px;
-    color: white;
     letter-spacing: .5px;
-    line-height: auto;
+    line-height: 20px;
 }
 a{
     color: white;
     padding: 6px;
-    background-color: black;
     text-decoration: none;
+    text-shadow: 5px 5px 4px black;
+    margin: 5px;
 }
 
 a:link {
@@ -80,10 +82,12 @@ a:link {
 }
 a:hover {
   color: red;
+  background-color: black;
+  border-radius: 10px;
 }
 a:active {
-   color: black;
-   background-color: maroon;
+   color: maroon;
+   background-color: black;
 }
 #leftmenu a:link {
     color: white;
