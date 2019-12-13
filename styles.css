@@ -11,11 +11,14 @@ header{
     font-size: 24px;
 }
 footer{
+    position: absolute;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
-    vertical-align: bottom;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -100px;
 }
 nav{
     text-align: center;
@@ -77,15 +80,15 @@ a{
     margin: 5px;
 }
 
-a:link {
+nav a:link {
     color: white;
 }
-a:hover {
+nav a:hover {
   color: red;
   background-color: black;
   border-radius: 10px;
 }
-a:active {
+nav a:active {
    color: maroon;
    background-color: black;
 }
@@ -109,7 +112,11 @@ a:active {
     height: 100%;
     padding-top: 20px;
     padding-left: 10px;
-    overflow: scroll;
+}
+#ghost{
+    position: relative;
+    height: 100%;
+    width: 230px;
 }
 #leftmenu a{
     color: white;
@@ -118,8 +125,41 @@ a:active {
     font-size: 20px;
     overflow: hidden;
     line-height: 30px;
+    top: 50%;
 }
 .fix-nav{
     position: fixed;
     top: 10px;
+}
+.content{
+    background-color: white;
+    position: absolute;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+#portfolio header{
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 12pt;
+}
+h4{
+    color: black;
+}
+h4 a:link {
+    color: white;
+}
+h4 a:visited {
+    color: silver;
+}
+h4 a:hover {
+    color: white;
+}
+h4 a:active {
+    color: black;
 }
