@@ -1,6 +1,7 @@
 body{
     background:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px"><g><rect x="7.3" y="7.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 25 -10.3553)" class="st0" width="35.4" height="35.4"/></g></svg>')       repeat;
     background-color: silver;
+    max-zoom: 50%;
 }
 header{
     font-family: 'Bebas Neue', sans-serif;
@@ -11,11 +12,14 @@ header{
     font-size: 24px;
 }
 footer{
+    position: absolute;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
-    vertical-align: bottom;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -100px;
 }
 nav{
     text-align: center;
@@ -70,6 +74,10 @@ p{
     line-height: 20px;
 }
 a{
+    color: black;
+    margin: 10px auto 10px;
+}
+nav a{
     color: white;
     padding: 6px;
     text-decoration: none;
@@ -77,17 +85,21 @@ a{
     margin: 5px;
 }
 
-a:link {
+nav a:link {
     color: white;
 }
-a:hover {
+nav a:hover {
   color: red;
   background-color: black;
   border-radius: 10px;
 }
-a:active {
+nav a:active {
    color: maroon;
    background-color: black;
+}
+#leftmenu a {
+    position: relative;
+    top: 50%;
 }
 #leftmenu a:link {
     color: white;
@@ -104,12 +116,16 @@ a:active {
 
 #leftmenu{
     position: fixed;
-    width: 11.5%;
+    width: 10%;
     background-color: black;
     height: 100%;
     padding-top: 20px;
     padding-left: 10px;
-    overflow: scroll;
+}
+#ghost{
+    position: relative;
+    height: 100%;
+    width: 230px;
 }
 #leftmenu a{
     color: white;
@@ -118,8 +134,48 @@ a:active {
     font-size: 20px;
     overflow: hidden;
     line-height: 30px;
+    top: 50%;
 }
 .fix-nav{
     position: fixed;
     top: 10px;
+}
+.content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#portfolio header{
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 12pt;
+}
+h4{
+    color: black;
+}
+h4 a:link {
+    color: white;
+}
+h4 a:visited {
+    color: silver;
+}
+h4 a:hover {
+    color: white;
+}
+h4 a:active {
+    color: black;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    max-width: 100%;
+    height: auto;
 }
