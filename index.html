@@ -3,27 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap" rel="stylesheet">
-    <title>Lance Trudel</title>
+    <title>Compte Rendu</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
 </head>
-<body id="wrap">
+<body>
+    <header><h1>Compte Rendu - 4/11/2020</h1></header>
+    <div class="container">
+            <h2>Mini-Test</h2>
+            <p>
+                Pour commencer, on était demander de repondre à un question, de creer un exemple et de souligner le parti relevant.
+                Ces questions sont:
+            </p>
+            <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                <h3>Quelle Question est qu'on demande pour trouver le sujet?</h3>
+                <p></p>
+                <hr />
+              
+                <div id='block-1' style='padding: 10px;'>
+                  <label for='option-1' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='6/24' id='option-1' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Qui/Quoi</label>
+                  <span id='result-1'></span>
+                </div>
+                <hr />
+              
+                <div id='block-2' style='padding: 10px;'>
+                  <label for='option-2' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='6' id='option-2' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Verbe + Qui/Quoi</label>
+                  <span id='result-2'></span>
+                </div>
+                <hr />
+              
+                <div id='block-3' style='padding: 10px;'>
+                  <label for='option-3' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='1/3' id='option-3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Qui/Quoi + Verbe</label>
+                  <span id='result-3'></span>
+                </div>
+                <hr />
+              
+                <div id='block-4' style='padding: 10px;'>
+                  <label for='option-4' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='1/6' id='option-4' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Sujet + Verbe + Qui/Quoi</label>
+                  <span id='result-4'></span>
+                </div>
+                <hr />
+                <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Soumettre</button>
+              </div>
+              <a id='showanswer1'></a>
 
-    <nav id="homebar">
-        <a href="./fr/index.html">FRANÇAIS</a>
-        <a href="./about.html">ABOUT</a>
-        <a href="./portfolio.html">PORTFOLIO</a>
-        <a href="./contact.html">CONTACT</a>
-        <a href="./blog.html">BLOG</a>
-    </nav>
+              <div style='transform: scale(0.65); position: relative; top: -200px;'>
+                <h3>Quelle Question est qu'on poser pour trouver le comp. direct?</h3>
+                <p></p>
+                <hr />
+              
+                <div id='block-21' style='padding: 10px;'>
+                  <label for='option-21' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='6/24' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Qui/Quoi</label>
+                  <span id='result-21'></span>
+                </div>
+                <hr />
+              
+                <div id='block-22' style='padding: 10px;'>
+                  <label for='option-22' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='6' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Verbe + Qui/Quoi</label>
+                  <span id='result-22'></span>
+                </div>
+                <hr />
+              
+                <div id='block-23' style='padding: 10px;'>
+                  <label for='option-23' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='1/3' id='option-23' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Qui/Quoi + Verbe</label>
+                  <span id='result-23'></span>
+                </div>
+                <hr />
+              
+                <div id='block-24' style='padding: 10px;'>
+                  <label for='option-24' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='1/6' id='option-24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Sujet + Verbe + Qui/Quoi</label>
+                  <span id='result-24'></span>
+                </div>
+                <hr />
+                <button type='button' onclick='displayAnswer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Soumettre</button>
+              </div>
+              <a id='showanswer2'></a>
 
-    <div id="bar">
-        <h3>LANCE TRUDEL'S PORTFOLIO</h3>
-        <p>ILLUSTRATOR - PROGRAMMER - DESIGNER - MODELLER - WEB DEVELOPER - CREATOR</p>
+              
+
+              <div style='transform: scale(0.65); position: relative; top: -300px;'>
+                <h3>Quelle Question poser pour trouver le comp. Indirecte?</h3>
+                <p></p>
+                <hr />
+              
+                <div id='block-31' style='padding: 10px;'>
+                  <label for='option-31' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='6/24' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Qui/Quoi</label>
+                  <span id='result-31'></span>
+                </div>
+                <hr />
+              
+                <div id='block-32' style='padding: 10px;'>
+                  <label for='option-32' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='6' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Verbe + Qui/Quoi</label>
+                  <span id='result-32'></span>
+                </div>
+                <hr />
+              
+                <div id='block-33' style='padding: 10px;'>
+                  <label for='option-33' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='1/3' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Qui/Quoi + Verbe</label>
+                  <span id='result-33'></span>
+                </div>
+                <hr />
+              
+                <div id='block-34' style='padding: 10px;'>
+                  <label for='option-34' style=' padding: 5px; font-size: 2.5rem;'>
+                    <input type='radio' name='option' value='1/6' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Sujet + Verbe + Qui/Quoi</label>
+                  <span id='result-34'></span>
+                </div>
+                <hr />
+                <button type='button' onclick='displayAnswer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Soumettre</button>
+              </div>
+              <a id='showanswer3'></a>
+
     </div>
 
-    <footer>© - Lance Trudel 2019</footer>
+    <div class="container" style="position: relative; top: -300px; margin-bottom: -300px;">
+        <h2>Participe passé avec l'auxilliaire être</h2>
+        <p>
+            Le participe passé avec l'auxilliaire être s’accorde en genre et en nombre avec le sujet.
+        </p>
+        <p>   <b>Exemples:</b> </p>
+
+        <p>    - Les invités sont arrivés en fin de soirée. (arriver, voix active, ne s’emploie qu’avec être)</p>
+
+        <p>    - Rachel est sortie avec des amis. (sortir, voix active, s’emploie avec être ou avec avoir)</p>
+
+        <p>    - Cette vedette est poursuivie par les journalistes. (poursuivre est à la voix passive)</p>
+
+        <p>    - Les étudiants ont été accusés à tort. (accuser est à la voix passive)</p>
+
+        <p>    - Elle a un grand besoin d’être aimée. (aimer est à la voix passive)</p>
+
+    </div>
+    <div class="container">
+        <h2>Participe passé avec l'auxilliaire avoir</h2>
+        <p>
+            Le participe passé s’accorde avec le complément direct (CD) si celui-ci est placé avant le verbe.
+        </p>
+    </div>
+    <div class="container">
+        <h2>Trucs</h2>
+        <p>Participe passé avec l'auxilliaire être: Sujêtre.</p>
+        <p>Participe passé avec l'auxilliaire Avoir: AvDir;</p>
+        <p>Avoir > AvOir > AvDir (Avant Direct)</p>
+        <p>Ap pas (Apres pas)</p>
+    </div>
+    <div class="container">
+        <h2>Cas Particuliers</h2>
+        <h3>Participe passé avec l'auxilliaire Avoir est invariable dans les cas suivants:</h3>
+        <p>Le participe passé des verbes impersonnels et du présentatif "il y a"</p>
+        <p>Le participe passé précédé du pronom le ou l' remplaçant une phrase ou une idée</p>
+        <p>Le participe passé précédé du pronom en quand celui-ci est complément direct</p>
+        <p>Les participes dû, pu, cru, voulu, prévu, permis, etc.</p>
+        <p>Les participes passés des verbes couter, valoir, peser, marcher, vivre, etc.</p>
+        <p>Le participe passé suivi d'un verbe à l'infinitif, lorsque le CD placé devant le verbe ne fait pas l'action exprimée par ce verbe à l'infinitif</p>
+    </div>
+    
+    <div class="container">
+        <h2>Le participe passé avec des verbes pronominaux</h2>
+        <p>
+            
+        </p>
+    </div>
+    <div class="container">
+        <h2>Devoir</h2>
+        <p>
+            Étude participe passé être + avoir
+        </p>
+    </div>
+    <div class="container">
+      <h2>Bibliographie</h2>
+      <p>
+          Bonenfant, C., Gagnon-Carignan, V. and Pelletier, M., 2013. Boite À Outils. Montréal: Groupe Modulo inc., pp.55-60.
+      </p>
+   </div>
 </body>
 </html>
